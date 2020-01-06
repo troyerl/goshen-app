@@ -1,3 +1,4 @@
 <app-header-nav [page]="page"></app-header-nav>
 <app-home-component *ngIf="page === 'Home'"></app-home-component>
+<app-news-component *ngIf="page === 'News'"></app-news-component>
 <app-footer-nav (changePage)="changePage($event)" [page]="page"></app-footer-nav>

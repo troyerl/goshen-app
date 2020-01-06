@@ -10,6 +10,9 @@ import { FooterItemComponent } from './components/footer-nav/footer-item/footer-
 import { HomeComponentComponent } from './components/home-component/home-component.component';
 import { CardComponentComponent } from './components/list-cards/card-component/card-component.component';
 import { ListCardsComponent } from './components/list-cards/list-cards.component';
+import { EventsComponentComponent } from './components/events-component/events-component.component';
+import { NewsComponentComponent } from './components/news-component/news-component.component';
+import { SettingComponentComponent } from './components/setting-component/setting-component.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +23,9 @@ import { ListCardsComponent } from './components/list-cards/list-cards.component
     HomeComponentComponent,
     CardComponentComponent,
     ListCardsComponent,
+    EventsComponentComponent,
+    NewsComponentComponent,
+    SettingComponentComponent,
   ],
   imports: [
     BrowserModule,
