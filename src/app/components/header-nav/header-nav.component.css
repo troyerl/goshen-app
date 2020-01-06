@@ -48,7 +48,7 @@ nav {
 
 /************** NOTIFICATIONS **************/
 .alert {
-  width: 20vw;
+  width: 19vw;
   margin-top: -11%;
   margin-left: 25%;
 }
@@ -61,9 +61,32 @@ nav {
   position: absolute;
   top: 15%;
   right: 5.75%;
-  /*padding: 0 6px;*/
   border-radius: 50%;
   background-color: red;
   color: white;
   font-size: 0.75rem;
+}
+
+@media screen and (min-height: 811px){
+  .page {
+    margin-top: 1%;
+  }
+  .alert {
+    width: 21vw;
+    margin-top: -8%;
+  }
+
+  .logo {
+    margin-top: -12%;
+  }
+}
+
+@media screen and (height: 568px) and (width: 320px){
+  a {
+    font-size: 1.5rem;
+  }
+
+  .alert{
+    width: 22vw;
+  }
 }

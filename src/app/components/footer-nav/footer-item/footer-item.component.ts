@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-footer-item',
@@ -7,7 +7,6 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class FooterItemComponent implements OnInit {
   @Input() navElement: {name: string, icon: []};
-
   constructor() { }
 
   ngOnInit() {

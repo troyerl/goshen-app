@@ -9,7 +9,7 @@ export class AppComponent {
   page = 'Home';
   title = 'tennis-app';
 
-  changePage(pageName) {
-    this.page = pageName;
+  changePage(pageItem: {name: string}) {
+    this.page = pageItem.name;
   }
 }

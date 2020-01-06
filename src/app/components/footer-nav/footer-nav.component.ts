@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-footer-nav',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer-nav.component.css']
 })
 export class FooterNavComponent implements OnInit {
+  @Input() page: string;
+  @Output() changePage = new EventEmitter<{name: string}>();
   // tslint:disable-next-line:max-line-length
   navItems = [
     // tslint:disable-next-line:max-line-length
@@ -17,6 +19,10 @@ export class FooterNavComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onNavPress(page) {
+    this.changePage.emit({name: page});
   }
 
 }
