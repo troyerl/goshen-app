@@ -13,6 +13,9 @@ import { ListCardsComponent } from './components/list-cards/list-cards.component
 import { EventsComponentComponent } from './components/events-component/events-component.component';
 import { NewsComponentComponent } from './components/news-component/news-component.component';
 import { SettingComponentComponent } from './components/setting-component/setting-component.component';
+import { ProfileTabComponent } from './components/setting-component/profile-tab/profile-tab.component';
+import { CheckComponentComponent } from './components/check-component/check-component.component';
+import { AppIndexComponent } from './components/app-index/app-index.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +29,9 @@ import { SettingComponentComponent } from './components/setting-component/settin
     EventsComponentComponent,
     NewsComponentComponent,
     SettingComponentComponent,
+    ProfileTabComponent,
+    CheckComponentComponent,
+    AppIndexComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,37 @@
+.card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 90vw;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+p {
+  padding-left: 4%;
+}
+
+.title {
+  padding-top: 5%;
+  margin-bottom: -1%;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #999999;
+  font-size: 1.2rem;
+}
+
+.item-title {
+  margin-top: 3%;
+  font-family: 'Poppins', sans-serif;
+  color: #999999;
+}
+
+.item {
+  margin-top: -4%;
+  font-size: 1.15rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.follow {
+  border-top: 1px solid #707070;
+}

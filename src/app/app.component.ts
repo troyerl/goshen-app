@@ -6,10 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  page = 'Home';
   title = 'tennis-app';
-
-  changePage(pageItem: {name: string}) {
-    this.page = pageItem.name;
-  }
+  page = 'Home';
+  url = window.location.href;
+  appCheck = !!this.url.split('?')[1];
 }

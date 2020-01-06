@@ -6,7 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./setting-component.component.css']
 })
 export class SettingComponentComponent implements OnInit {
-
+  user = {
+    FullName: 'Logan Troyer',
+    email: 'troyerlogan@gmail.com',
+    phone: '574-312-1102',
+    username: 'troyerl'
+  };
   constructor() { }
 
   ngOnInit() {
