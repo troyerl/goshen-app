@@ -1,13 +1,13 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: "app-header-nav",
-  templateUrl: "./header-nav.component.html",
-  styleUrls: ["./header-nav.component.css"]
+  selector: 'app-header-nav',
+  templateUrl: './header-nav.component.html',
+  styleUrls: ['./header-nav.component.css']
 })
 export class HeaderNavComponent implements OnInit {
-  page = "Home";
-  notifcationNumber = 1;
+  page = 'Home';
+  notifcationNumber = 3;
   constructor() {}
 
   ngOnInit() {}

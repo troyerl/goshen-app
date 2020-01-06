@@ -11,7 +11,7 @@
           src="../../../assets/svg/alert.svg"
           alt="alert"
         />
-        <span class="badge">{{ notifcationNumber }}</span>
+        <span class="badge" *ngIf="notifcationNumber">{{ notifcationNumber }}</span>
       </a>
     </nav>
   </div>
