@@ -33,3 +33,7 @@ p {
 .icon {
   width: 6.75vw;
 }
+
+.current {
+  color: #C43333;
+}

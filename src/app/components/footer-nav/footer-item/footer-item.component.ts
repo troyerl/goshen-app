@@ -7,6 +7,7 @@ import {Component, EventEmitter, Input, OnInit} from '@angular/core';
 })
 export class FooterItemComponent implements OnInit {
   @Input() navElement: {name: string, icon: []};
+  @Input() page: string;
   constructor() { }
 
   ngOnInit() {

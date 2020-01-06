@@ -4,9 +4,9 @@
       class="icon"
       viewBox="0 0 512 512"
     >
-      <path *ngFor="let d of navElement.icon" [attr.d]="d"></path>
+      <path *ngFor="let d of navElement.icon" [attr.d]="d" [attr.fill]="page === navElement.name ? '#C43333' : '#000000'"></path>
     </svg>
-    <p>{{navElement.name}}</p>
+    <p [ngClass]="page === navElement.name ? 'current' : ''">{{navElement.name}}</p>
   </a>
 </div>
 

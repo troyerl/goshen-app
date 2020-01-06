@@ -1,7 +1,7 @@
 <div class="footer">
   <div class="container">
     <nav>
-        <app-footer-item *ngFor="let item of navItems" [navElement]="item" (click)="onNavPress(item.name)"></app-footer-item>
+        <app-footer-item *ngFor="let item of navItems" [navElement]="item" (click)="onNavPress(item.name)" [page]="page"></app-footer-item>
     </nav>
   </div>
 </div>
