@@ -1,0 +1,35 @@
+.containers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+svg {
+  margin-top: -10%;
+  margin-bottom: -25%;
+}
+
+.News {
+  margin-top: -1%;
+}
+
+a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   color: black;
+   text-decoration: none;
+   font-family: "Poppins", sans-serif;
+ }
+
+p {
+  margin-top: 23%;
+}
+
+#Settings {
+  margin-top: 4%;
+}
+
+.icon {
+  width: 6.75vw;
+}

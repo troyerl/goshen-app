@@ -1,0 +1,51 @@
+.card {
+  margin-top: 3%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 90vw;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-type p {
+  font-size: 0.85rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.type {
+  padding-left: 4%;
+}
+
+.date {
+  padding-right: 30px;
+  font-weight: bold;
+}
+
+.card-type {
+  display:flex;
+  justify-content: space-between;
+}
+
+.title {
+  width: 88%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 4%;
+  margin-top: -4%;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+.details {
+  width: 88%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: -6%;
+  padding-left: 4%;
+  font-family: 'Poppins', sans-serif;
+}

@@ -1,0 +1,10 @@
+<div class="card" (click)="onClick()">
+  <div class="card-type">
+    <p class="type" *ngIf="eventBoolean">Event</p>
+    <p class="type" *ngIf="!eventBoolean">Announcement</p>
+    <p class="date">{{data.date}}</p>
+  </div>
+  <p class="title">{{data.title}}</p>
+  <p class="details" *ngIf="!eventBoolean">{{data.message}}</p>
+  <p class="details" *ngIf="eventBoolean">{{data.address}}</p>
+</div>

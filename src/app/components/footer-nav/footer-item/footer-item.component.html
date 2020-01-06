@@ -1,0 +1,13 @@
+<div class="containers" [id]="navElement.name">
+  <a href="#">
+    <svg
+      class="icon"
+      viewBox="0 0 512 512"
+    >
+      <path *ngFor="let d of navElement.icon" [attr.d]="d"></path>
+    </svg>
+    <p>{{navElement.name}}</p>
+  </a>
+<!--  <a href="#" [class]="navElement.name" id="itemName">{{navElement.name}}</a>-->
+</div>
+
