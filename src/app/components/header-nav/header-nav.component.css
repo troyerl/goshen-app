@@ -7,7 +7,7 @@
 .header nav {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 a {
@@ -40,6 +40,12 @@ nav {
 }
 
 /************** LOGO **************/
+.logo-link {
+  left: 0;
+  position: absolute;
+  margin-left: 10%;
+}
+
 .logo {
   height: 17vw;
   margin-top: -18%;
@@ -54,12 +60,14 @@ nav {
 }
 
 .notify {
-  margin-right: -5%;
+  right: 0;
+  position: absolute;
+  margin-right: 5%;
 }
 
 .badge {
   position: absolute;
-  top: 15%;
+  top: 9%;
   right: 5.75%;
   border-radius: 50%;
   background-color: red;
