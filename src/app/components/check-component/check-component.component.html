@@ -2,20 +2,73 @@
   <app-app-index></app-app-index>
 </div>
 <div class="app" *ngIf="!appCheck">
-  <div class="mobile">
-    <ul class="nav nav-tabs">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">iPhone</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Android</a>
-      </li>
-    </ul>
-  </div>
-  <div class="desktop">
-    <div class="info-container">
-      <div class="errorMsg">
-        <h2>Goshen Redhawk App is not supported on tablets, laptops or desktops yet. Please reconnect with a mobile phone to download.</h2>
+  <div>
+    <div class="about-header">
+      <div class="mobile">
+        <h1 class="about-title" *ngIf="aboutBoolean">Goshen App</h1>
+        <h4 class="about-title" *ngIf="!aboutBoolean">Download Instructions</h4>
+      </div>
+      <div class="desktop">
+        <h1 class="about-title">Sorry...</h1>
+      </div>
+    </div>
+    <div *ngIf="aboutBoolean">
+      <div class="about-message">
+        <div class="mobile">
+          <div class="mobile-message">
+            <p class="about-message">Goshen App was created to provide players and coaches a centralized location for all your teams announcements and events.</p>
+            <button (click)="showInstructions()">Download Instructions</button>
+          </div>
+        </div>
+        <div class="desktop">
+          <h1 class="about-message">Goshen Redhawk App is not supported on tablets, laptops or desktops yet. Please reconnect with a mobile phone to download.</h1>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="!aboutBoolean" class="instructions-container">
+      <ul class="nav nav-pills nav-fill">
+        <li class="nav-item">
+          <a class="nav-link" (click)="intructionChange('iphone')" [ngClass]="activeValue === 'iphone' ? 'active' : ''" id="iphone">iPhone</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="intructionChange('android')" [ngClass]="activeValue === 'android' ? 'active' : ''">Android</a>
+        </li>
+      </ul>
+      <div *ngIf="activeValue === 'iphone'">
+        <div class="instructions">
+          <div>
+            <p>1.) Press Square with arrow button at buttom of page</p>
+            <img class="image" src="../../../assets/instructions/apple/FirstStep.png" alt="firstInstr">
+          </div>
+          <div>
+            <p>2.) Scroll down and press 'Add to Home Screen'</p>
+            <img class="image" src="../../../assets/instructions/apple/secondInstruc%20copy.png" alt="firstInstr">
+          </div>
+          <div>
+            <p>3.) Press 'Add' in top right</p>
+            <img class="image" src="../../../assets/instructions/apple/thirdInstruc.png" alt="firstInstr">
+          </div>
+        </div>
+      </div>
+      <div *ngIf="activeValue !== 'iphone'">
+        <div class="instructions">
+          <div>
+            <p>1.) Press three stacked dots in top left corner</p>
+            <img class="image" src="../../../assets/instructions/android/androidOne.png" alt="firstInstr">
+          </div>
+          <div>
+            <p>2.) Scroll down and press 'Add to Home Screen'</p>
+            <img class="image" src="../../../assets/instructions/android/androidTwo.png" alt="firstInstr">
+          </div>
+          <div>
+            <p>3.) Press 'Add' in bottom right</p>
+            <img class="image" src="../../../assets/instructions/android/androidThree.png" alt="firstInstr">
+          </div>
+          <div>
+            <p>3.) Press 'Add Automatically' in bottom right</p>
+            <img class="image" src="../../../assets/instructions/android/androidFour.png" alt="firstInstr">
+          </div>
+        </div>
       </div>
     </div>
   </div>

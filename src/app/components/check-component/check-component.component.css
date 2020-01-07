@@ -1,6 +1,75 @@
 h2 {
   font-family: 'Poppins', sans-serif;
 }
+
+.about-header {
+  top: 0;
+  position: fixed;
+  background-image: url("../../../assets/Red-Background-Traingles.jpg");
+  height: 20vh;
+  border-radius: 0 0 25% 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  background-color: red;
+  z-index: 2;
+}
+
+.image {
+  width: 100vw;
+}
+
+.instructions {
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  flex-direction: column;
+}
+
+.instructions div {
+  margin-top: 7%;
+  border-bottom: 1px solid black;
+}
+
+.about-title {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2.75rem;
+}
+.about-message {
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+  background-color: #C43333;
+  padding: 4% 5% 4% 5%;
+  border-radius: 5%;
+  color: white;
+  font-weight: bold;
+}
+
+.instructions p {
+  font-weight: bold;
+  text-align: center;
+}
+
+.instructions-container{
+  margin-top: 22vh;
+}
+
+.instructions-container h3 {
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .mobile {
@@ -34,11 +103,19 @@ h2 {
   .images {
     border-left: 1px solid #707070;
   }
+
+  .about-message {
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .desktop {
     display: none;
+  }
+
+  .mobile-message {
+    margin-top: 25vh;
   }
 }
 

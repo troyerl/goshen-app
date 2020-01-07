@@ -7,13 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CheckComponentComponent implements OnInit {
   appCheck = false;
+  aboutBoolean = true;
+  activeValue = 'iphone';
   constructor() { }
+
+  showInstructions() {
+    this.aboutBoolean = !this.aboutBoolean;
+  }
+
+  intructionChange(type: string) {
+    this.activeValue = type;
+  }
 
   ngOnInit() {
     let url;
     url = window.location.href;
     this.appCheck = !!url.split('?')[1];
-    this.appCheck = true;
   }
 
 }
