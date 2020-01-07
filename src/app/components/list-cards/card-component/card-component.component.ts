@@ -6,7 +6,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
   styleUrls: ['./card-component.component.css']
 })
 export class CardComponentComponent implements OnInit {
-  @Input() data: {};
+  @Input() data: {title: string, date: string, message: string};
   @Input() eventBoolean: boolean;
   @Input() homeBoolean: boolean;
   @Output() modalFunction = new EventEmitter<{title: string, date: string, message: string}>();

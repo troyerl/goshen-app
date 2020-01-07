@@ -17,7 +17,8 @@ import { ProfileTabComponent } from './components/setting-component/profile-tab/
 import { CheckComponentComponent } from './components/check-component/check-component.component';
 import { AppIndexComponent } from './components/app-index/app-index.component';
 import { AlertCardComponent } from './components/news-component/alert-card/alert-card.component';
-import { HomeModalComponent } from './components/home-component/home-modal/home-modal.component';
+import { HomeModalComponent } from './components/list-cards/home-modal/home-modal.component';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { HomeModalComponent } from './components/home-component/home-modal/home-
   ],
   imports: [
     BrowserModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    ModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

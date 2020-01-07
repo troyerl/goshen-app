@@ -6,14 +6,11 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./home-modal.component.css']
 })
 export class HomeModalComponent implements OnInit {
-  @Input() data: {};
-  test: {};
+  @Input() data: {title: string, date: string, message: string};
   constructor() { }
 
   ngOnInit() {
-    if (this.data) {
-      console.log();
-    }
+    console.log(this.data);
   }
 
 }
