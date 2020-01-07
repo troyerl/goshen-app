@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-card-component',
@@ -9,12 +9,14 @@ export class CardComponentComponent implements OnInit {
   @Input() data: {};
   @Input() eventBoolean: boolean;
   @Input() homeBoolean: boolean;
+  @Output() modalFunction = new EventEmitter<{title: string, date: string, message: string}>();
   constructor() { }
 
   onClick() {
-    console.log('test');
+    this.modalFunction.emit({title: this.data.title, date: this.data.date, message: this.data.message});
   }
   ngOnInit() {
+
   }
 
 }

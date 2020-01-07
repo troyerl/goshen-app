@@ -1,0 +1,44 @@
+.card {
+  margin-top: 3%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 90vw;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+}
+.alert-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+  align-items: center;
+}
+
+.alert-title {
+  margin-left: 4%;
+  font-weight: bold;
+  font-size: 1.25rem;
+  width: 85%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.alert-date {
+  margin-right: 4%;
+  font-weight: bold;
+}
+
+.alert-message {
+  margin-top: -4%;
+  margin-left: 4%;
+  width: 88%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

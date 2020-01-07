@@ -16,6 +16,8 @@ import { SettingComponentComponent } from './components/setting-component/settin
 import { ProfileTabComponent } from './components/setting-component/profile-tab/profile-tab.component';
 import { CheckComponentComponent } from './components/check-component/check-component.component';
 import { AppIndexComponent } from './components/app-index/app-index.component';
+import { AlertCardComponent } from './components/news-component/alert-card/alert-card.component';
+import { HomeModalComponent } from './components/home-component/home-modal/home-modal.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,8 @@ import { AppIndexComponent } from './components/app-index/app-index.component';
     ProfileTabComponent,
     CheckComponentComponent,
     AppIndexComponent,
+    AlertCardComponent,
+    HomeModalComponent,
   ],
   imports: [
     BrowserModule,

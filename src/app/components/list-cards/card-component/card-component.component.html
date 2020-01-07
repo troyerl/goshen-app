@@ -1,4 +1,4 @@
-<div class="card" (click)="onClick()" *ngIf="homeBoolean">
+<div class="card" (click)="onClick()" *ngIf="homeBoolean" data-toggle="modal" data-target="#exampleModal">
   <div class="card-type">
     <p class="type" *ngIf="eventBoolean">Event</p>
     <p class="type" *ngIf="!eventBoolean">Announcement</p>
