@@ -19,6 +19,7 @@ import { AppIndexComponent } from './components/app-index/app-index.component';
 import { AlertCardComponent } from './components/news-component/alert-card/alert-card.component';
 import { HomeModalComponent } from './components/list-cards/home-modal/home-modal.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { DateModalComponent } from './components/list-cards/date-modal/date-modal.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     AppIndexComponent,
     AlertCardComponent,
     HomeModalComponent,
+    DateModalComponent,
   ],
   imports: [
     BrowserModule,

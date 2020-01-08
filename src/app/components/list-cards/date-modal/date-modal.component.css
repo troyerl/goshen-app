@@ -1,0 +1,39 @@
+.modal-title {
+  font-weight: bold;
+  width: 90%;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.message {
+  margin-top: -3%;
+  margin-bottom: 10%;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.date {
+  font-weight: bold;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: -2%;
+  margin-bottom: 1%;
+}
+.second {
+  margin-top: -3%;
+  margin-bottom: 5%;
+}
+.modal-body button {
+  border-radius: 1%;
+  background-color: #C43333;
+  text-align: center;
+  width: 80%;
+  height: 6vh;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}

@@ -1,6 +1,6 @@
 <!-- Modal -->
 <div class="test">
-  <div class="modal fade" id="newsModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal fade" id="dateModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -10,8 +10,11 @@
           </button>
         </div>
         <div class="modal-body">
-          <p class="date">Date: {{data.date}}</p>
-          <p class="message">{{data.message}}</p>
+          <p class="date">Start Time: {{data.startTime}}</p>
+          <p class="date second">Approx. End Time: {{data.endTime}}</p>
+          <div class="button-container">
+            <button (click)="mapSelector()">Directions</button>
+          </div>
         </div>
       </div>
     </div>

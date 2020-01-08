@@ -5,8 +5,9 @@ import {Component, Input, OnInit} from '@angular/core';
   template: `
       <div class="cards">
           <app-home-modal [data]="modalData"></app-home-modal>
+          <app-date-modal [data]="eventData"></app-date-modal>
           <app-card-component *ngFor="let alert of alertsList" [data]="alert" [eventBoolean]="false" [homeBoolean]="homeBoolean" (modalFunction)="setAlertModalData($event)"></app-card-component>
-          <app-card-component *ngFor="let event of eventsList" [data]="event" [eventBoolean]="true" [homeBoolean]="homeBoolean"></app-card-component>
+          <app-card-component *ngFor="let event of eventsList" [data]="event" [eventBoolean]="true" [homeBoolean]="homeBoolean" (eventFunction)="setEventModalData($event)"></app-card-component>
       </div>
   `,
   styleUrls: ['./list-cards.component.css']
@@ -17,6 +18,7 @@ export class ListCardsComponent implements OnInit {
   eventsList = [];
   alertsList = [];
   modalData = {title: '', date: '', message: ''};
+  eventData = {title: '', date: '', address: '', startTime: '', endTime: ''};
 
   @Input() homeBoolean: boolean;
 
@@ -24,6 +26,10 @@ export class ListCardsComponent implements OnInit {
 
   setAlertModalData(data: {title: string, date: string, message: string}) {
     this.modalData = data;
+  }
+
+  setEventModalData(data: {title: string, date: string, address: string, startTime: string, endTime: string}) {
+    this.eventData = data;
   }
 
   ngOnInit() {
