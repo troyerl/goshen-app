@@ -11,9 +11,16 @@ export class NewsComponentComponent implements OnInit {
     new Alert('Practiced Cancelled', '12/18/19', 'Practice has been cancelled due to weather. Hope you all have a nice day off and get some rest, it\'s going to be a hard practice tomorrow.'),
     new Alert('WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW', '12/18/19', 'WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW'),
   ];
+
+  modalData = {title: '', date: '', message: ''};
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  setAlertModalData(data: {title: string, date: string, message: string}) {
+    this.modalData = data;
   }
 
 }

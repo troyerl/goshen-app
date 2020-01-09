@@ -35,7 +35,6 @@ export class ListCardsComponent implements OnInit {
   ngOnInit() {
     Object.values(this.alerts).map(item => this.alertsList.push(item));
     Object.values(this.events).map(item => this.eventsList.push(item));
-    console.log(this.eventsList);
   }
 
 }

@@ -1,3 +1,4 @@
 <div class="body">
-  <app-alert-card *ngFor="let alert of alerts" [alertInfo]="alert"></app-alert-card>
+  <app-alert-card *ngFor="let alert of alerts" [alertInfo]="alert" (setAlertModalData)="setAlertModalData($event)"></app-alert-card>
+  <app-home-modal [data]="modalData"></app-home-modal>
 </div>
