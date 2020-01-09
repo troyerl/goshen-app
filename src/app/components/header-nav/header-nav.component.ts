@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-header-nav',
@@ -8,7 +8,11 @@ import {Component, Input, OnInit} from '@angular/core';
 export class HeaderNavComponent implements OnInit {
   @Input() page: string;
   notifcationNumber = 3;
+  @Output() changePage = new EventEmitter<{name: string}>();
   constructor() {}
 
+  changeHome() {
+    this.changePage.emit({name: 'Home'});
+  }
   ngOnInit() {}
 }

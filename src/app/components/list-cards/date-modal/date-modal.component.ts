@@ -18,7 +18,7 @@ export class DateModalComponent implements OnInit {
     this.addressArray = [];
     this.addressLocation = '';
     this.addressArray = this.data.address.split(' ');
-    console.log(this.addressArray);
+    console.log(this.data);
     this.addressArray.map((item, idx) => {
       if (idx === this.addressArray.length - 1) {
         this.addressLocation += item;
