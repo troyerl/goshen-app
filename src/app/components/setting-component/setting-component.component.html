@@ -1,3 +1,4 @@
 <div class="body">
   <app-profile-tab [userInfo]="user"></app-profile-tab>
+  <app-setting-tabs *ngFor="let setting of settingsTabs" [settingInfo]="setting"></app-setting-tabs>
 </div>

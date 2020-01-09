@@ -1,0 +1,10 @@
+<div class="card">
+  <div class="tab">
+    <span class="dot"></span>
+    <svg class="icon tab-icon" viewBox="0 0 512 512">
+      <path fill="#C43333" *ngFor="let dPath of d" [attr.d]="dPath"></path>
+    </svg>
+    <p class="tab-title">{{settingInfo.title}}</p>
+    <img src="../../../../assets/arrow.svg" class="arrow" alt="arrow">
+  </div>
+</div>
