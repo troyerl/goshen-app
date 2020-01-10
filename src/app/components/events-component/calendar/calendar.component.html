@@ -1,0 +1,8 @@
+<div class="calendar-container">
+  <ngb-datepicker #dp [(ngModel)]="model" (navigate)="date = $event.next"></ngb-datepicker>
+  <pre>Month: {{ date.month }}.{{ date.year }}</pre>
+  <pre>Model: {{ model | json }}</pre>
+</div>
+
+
+

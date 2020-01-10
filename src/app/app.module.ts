@@ -21,6 +21,9 @@ import { HomeModalComponent } from './components/list-cards/home-modal/home-moda
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { DateModalComponent } from './components/list-cards/date-modal/date-modal.component';
 import { SettingTabsComponent } from './components/setting-component/setting-tabs/setting-tabs.component';
+import { CalendarComponent } from './components/events-component/calendar/calendar.component';
+import {FormsModule} from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -41,11 +44,14 @@ import { SettingTabsComponent } from './components/setting-component/setting-tab
     HomeModalComponent,
     DateModalComponent,
     SettingTabsComponent,
+    CalendarComponent,
   ],
   imports: [
     BrowserModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    ModalModule.forRoot()
+    ServiceWorkerModule.register('ngsw-worker.js', {enabled: environment.production}),
+    ModalModule.forRoot(),
+    FormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

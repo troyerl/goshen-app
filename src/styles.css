@@ -10,3 +10,59 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
+
+.ngb-dp-day {
+  width: 3.25rem !important;
+  height: 2rem !important;
+}
+
+ngb-datepicker-month-view {
+  background-color: white;
+}
+
+.bg-primary {
+  background-color: #C43333 !important;
+}
+
+.btn-link {
+color: #707070;
+}
+
+.ngb-dp-day > div {
+  width: 3.25rem !important;
+  height: 2rem !important;
+  line-height: 2rem !important;
+}
+
+.ngb-dp-weekday {
+  color: #C43333 !important;
+  width: 3.25rem !important;
+}
+
+@media only screen and (max-width: 400px) {
+  .ngb-dp-day {
+    width: 3rem !important;
+  }
+
+  .ngb-dp-day > div {
+    width: 3rem !important;
+  }
+
+  .ngb-dp-weekday {
+    width: 3rem !important;
+  }
+}
+
+@media only screen and (max-width: 3600px) {
+  .ngb-dp-day {
+    width: 2.75rem !important;
+  }
+
+  .ngb-dp-day > div {
+    width: 2.75rem !important;
+  }
+
+  .ngb-dp-weekday {
+    width: 2.75rem !important;
+  }
+}
