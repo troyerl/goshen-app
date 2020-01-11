@@ -24,6 +24,10 @@ import { SettingTabsComponent } from './components/setting-component/setting-tab
 import { CalendarComponent } from './components/events-component/calendar/calendar.component';
 import {FormsModule} from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CalendarListComponent } from './components/events-component/calendar/calendar-list/calendar-list.component';
+import { AuthComponent } from './components/auth/auth.component';
+import { LoginComponent } from './components/auth/login/login.component';
+import { SignupComponent } from './components/auth/signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +49,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     DateModalComponent,
     SettingTabsComponent,
     CalendarComponent,
+    CalendarListComponent,
+    AuthComponent,
+    LoginComponent,
+    SignupComponent,
   ],
   imports: [
     BrowserModule,

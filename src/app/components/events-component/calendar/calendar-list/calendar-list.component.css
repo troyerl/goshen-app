@@ -1,0 +1,50 @@
+.calendar-list {
+  display: flex;
+  height: 20%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  border-bottom: 1px solid black;
+}
+
+.second-class {
+  margin-top: -20%;
+}
+
+.times p {
+  font-size: 0.85rem;
+}
+
+.times {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-class {
+  margin-top: 23%;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+}
+
+.title p {
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding-left: 4%;
+  padding-top: 3%;
+}
+
+.location p {
+  font-size: 0.85rem;
+  padding-left: 4%;
+  margin-top: -5%;
+}

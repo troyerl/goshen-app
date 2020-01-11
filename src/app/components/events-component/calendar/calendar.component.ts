@@ -12,11 +12,8 @@ export class CalendarComponent implements OnInit {
   constructor(private calendar: NgbCalendar) {
   }
 
-  selectToday() {
-    this.model = this.calendar.getToday();
-  }
-
   ngOnInit() {
+    this.model = this.calendar.getToday();
   }
 
 }
