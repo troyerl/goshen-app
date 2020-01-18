@@ -1,13 +1,17 @@
 <div class="calendar-container">
-  <ngb-datepicker [(ngModel)]="model" (navigate)="date = $event.next"></ngb-datepicker>
+  <div class="calendar">
+    <ngb-datepicker [(ngModel)]="model" (navigate)="date = $event.next"></ngb-datepicker>
+  </div>
   <div class="list-view">
-    <app-calendar-list></app-calendar-list>
-    <app-calendar-list></app-calendar-list>
-    <app-calendar-list></app-calendar-list>
-    <app-calendar-list></app-calendar-list>
-    <app-calendar-list></app-calendar-list>
-    <app-calendar-list></app-calendar-list>
-    <pre>Model: {{ model | json }}</pre>
+    <div>
+      <app-calendar-list></app-calendar-list>
+      <app-calendar-list></app-calendar-list>
+      <app-calendar-list></app-calendar-list>
+      <app-calendar-list></app-calendar-list>
+      <app-calendar-list></app-calendar-list>
+      <app-calendar-list></app-calendar-list>
+      <pre>Model: {{ model | json }}</pre>
+    </div>
   </div>
 </div>
 

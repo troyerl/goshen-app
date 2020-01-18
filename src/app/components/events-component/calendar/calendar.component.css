@@ -14,7 +14,7 @@
   flex-direction: column;
   min-height: 600px;
   height: auto !important;
-  overflow: auto;
+  overflow-y: scroll;
 }
 
 
