@@ -9,10 +9,6 @@ svg {
   margin-bottom: -25%;
 }
 
-.News {
-  margin-top: -1%;
-}
-
 a {
   display: flex;
   flex-direction: column;
@@ -24,10 +20,6 @@ a {
 
 p {
   margin-top: 23%;
-}
-
-#Settings {
-  margin-top: 4%;
 }
 
 .icon {
