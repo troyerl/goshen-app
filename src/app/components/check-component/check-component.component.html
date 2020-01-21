@@ -28,10 +28,10 @@
     <div *ngIf="!aboutBoolean" class="instructions-container">
       <ul class="nav nav-pills nav-fill">
         <li class="nav-item">
-          <a class="nav-link" (click)="intructionChange('iphone')" [ngClass]="activeValue === 'iphone' ? 'active' : ''" id="iphone">iPhone</a>
+          <a class="nav-link" (click)="instructionChange('iphone')" [ngClass]="activeValue === 'iphone' ? 'active' : ''" id="iphone">iPhone</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" (click)="intructionChange('android')" [ngClass]="activeValue === 'android' ? 'active' : ''">Android</a>
+          <a class="nav-link" (click)="instructionChange('android')" [ngClass]="activeValue === 'android' ? 'active' : ''">Android</a>
         </li>
       </ul>
       <div *ngIf="activeValue === 'iphone'">

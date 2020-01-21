@@ -15,7 +15,7 @@ export class CheckComponentComponent implements OnInit {
     this.aboutBoolean = !this.aboutBoolean;
   }
 
-  intructionChange(type: string) {
+  instructionChange(type: string) {
     this.activeValue = type;
   }
 
@@ -23,6 +23,7 @@ export class CheckComponentComponent implements OnInit {
     let url;
     url = window.location.href;
     this.appCheck = !!url.split('?')[1];
+    // this.appCheck = true;
   }
 
 }

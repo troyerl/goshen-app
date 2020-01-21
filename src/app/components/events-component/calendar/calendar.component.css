@@ -8,12 +8,9 @@
 .list-view {
   width: 100vw;
   background-color: white;
-  border-top: 1px solid #707070;
   margin-top: 8%;
-  display: flex;
-  flex-direction: column;
-  min-height: 600px;
-  height: auto !important;
+  /*display: flex;*/
+  /*flex-direction: column;*/
   overflow-y: scroll;
 }
 
