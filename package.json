@@ -23,7 +23,7 @@
     "@angular/service-worker": "~8.2.14",
     "@ng-bootstrap/ng-bootstrap": "^5.1.5",
     "bootstrap": "^4.4.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jqwidgets-ng": "^9.0.0",
     "jqwidgets-scripts": "^9.0.0",
     "ngx-bootstrap": "^5.2.0",
